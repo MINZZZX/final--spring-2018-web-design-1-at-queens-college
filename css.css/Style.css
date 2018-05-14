@@ -111,21 +111,27 @@
 
 	/* -------------------ABOUT ME PAGE----------------------- */
 
+		#about {
+			line-height: 1.33em;
+			-webkit-hyphens: auto;
+			-moz-hyphens: auto;
+			-ms-hyphens: auto;
+			hyphens: auto;
+		}
 
-
-		#About .tag {
+		#about .tag {
 			color: #686766;
 			font-weight: bold;
 		}
 
-		#About .br2 {
+		#about .br2 {
 			display: none;
 		}
 		@media screen and (min-width: 30em) {
-			#About .br1 {
+			#about .br1 {
 				display: none;
 			}
-			#About .br2 {
+			#about .br2 {
 				display: inline;
 			}
 		}
@@ -137,8 +143,8 @@
 	text-align:center;
 }
 
-#Resume a,
-#Mail a {
+#resume a,
+#mail a {
 	padding: 0.6em;
 }
 	/* ------------------ABOUT ME PAGE------------------------ */
@@ -146,77 +152,44 @@
 
 	/* ----------------------CONTACT ME PAGE-------------------- */
 
-	/* Style inputs with type="text", select elements and textareas */
-	input[type=text], select, textarea {
-	    width: 100%; /* Full width */
-	    padding: 12px; /* Some padding */
-	    border: 1px solid #ccc; /* Gray border */
-	    border-radius: 4px; /* Rounded borders */
-	    box-sizing: border-box; /* Make sure that padding and width stays in place */
-	    margin-top: 6px; /* Add a top margin */
-	    margin-bottom: 16px; /* Bottom margin */
-	    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-	}
-
-	/* Style the submit button with a specific background color etc */
-	input[type=submit] {
-	    background-color: #4CAF50;
-	    color: white;
-	    padding: 12px 20px;
-	    border: none;
-	    border-radius: 4px;
-	    cursor: pointer;
-	}
-
-	/* When moving the mouse over the submit button, add a darker green color */
-	input[type=submit]:hover {
-	    background-color: #45a049;
-	}
-
-	/* Add a background color and some padding around the form */
-	.container {
-	    border-radius: 5px;
-	    background-color: #f2f2f2;
-	    padding: 20px;
-	}
 
 
 /* ----------------CONTACT ME PAGE_______________ */
-	#ProjectList {
+	#projectlist{
 		/* gutter = 1em */
 		width: calc(100% + 1em);
 		margin: -0.5em;
 	}
 
-		#ProjectList > a {
-			display: inline-block;
-			vertical-align: bottom;
-			width: 100%;
-			padding: 0.5em;
-			position: relative;
-		}
+			#projectlist> a {
+				display: inline-block;
+				vertical-align: bottom;
+				width: 100%;
+				padding: 0.5em;
+				position: relative;
+			}
 
 
-		@media screen and (min-width: 30em) { #ProjectList > a { width: 50%; } }
-		@media screen and (min-width: 55em) { #ProjectList > a { width: 33%; } }
-		@media screen and (min-width: 70em) { #ProjectList > a { width: 25%; } }
+			@media screen and (min-width: 30em) { #projectlist> a { width: 50%; } }
+			@media screen and (min-width: 55em) { #projectlist> a { width: 33%; } }
+			@media screen and (min-width: 70em) { #projectlist> a { width: 25%; } }
 
-			#ProjectList > a img,
-			#ProjectList > a .infos {
+			#projectlist> a img,
+			#projectlist> a .infos {
 				width: 100%;
 				position: relative;
 			}
 
-			#ProjectList > a img {
+			#projectlist> a img {
 				transition: top 0.5s cubic-bezier(0, 1, 0.5, 1);
 				top: 0;
 			}
 
-			#ProjectList > a:hover img {
+			#projectlist> a:hover img {
 				top: 0.4em;
 			}
 
-			#ProjectList > a .infos {
+			#projectlist> a .infos {
 				margin: 0;
 				padding: 0.5em 0;
 				background-color: white;
@@ -228,41 +201,36 @@
 	/* ------------------------------------------ */
 
 
-	#ContactMe {
+	#contactme {
 		font-size: 0.85em;
 		opacity: 0.5;
 	}
 
-	#SocialLinks a {
+	#sociallinks a {
 		width:70px;
 		padding: 10px;
 		display: inline-block;
 	}
 
-
-	#Mail img {
+	#mail img {
 		width: 2em;
 		position: relative;
 		top: 0.21em;
 	}
 
-	#Mail img,
-	#SocialLinks img {
+	#mail img,
+	#sociallinks img {
 		transition: filter 0.1s ease-out;
 	}
-	#Mail a:hover img,
-	#SocialLinks a:hover img {
+	#mail a:hover img,
+	#sociallinks a:hover img {
 		filter: saturate(400%);
 	}
-
-</style>
-
 
 /*
 <!--=====================================================================================--> */
 
 @media screen and (min-width: 35em) {
-
 	body {
 		margin-left:  20%; /* falLback */
 		margin-right: 20%; /* falLback */
@@ -328,6 +296,14 @@ footer {
 
 /* ------------------------------------------ */
 
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+}
+
+/* ------------------------------------------ */
+/* img considéré comme block */
 
 img {
 	max-width: 100%;
